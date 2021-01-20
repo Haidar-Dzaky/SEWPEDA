@@ -13,62 +13,49 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="53dp">
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="match_parent"
+                    android:src="">
+                </ImageView>
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="260dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="15dp"
                     android:text="@string/tabHome"
+                    android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="25sp">
                 </TextView>
-            </RelativeLayout>
-            <GridLayout
-                android:columnCount="2"
-                android:rowCount="1"
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="match_parent"
+                    android:src="">
+                </ImageView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_model"
+                android:textSize="25dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="15dp">
+            </TextView>
+            <LinearLayout
                 android:alignmentMode="alignMargins"
                 android:columnOrderPreserved="false"
                 android:layout_width="match_parent"
-                android:layout_height="255dp"
-                android:background="@drawable/ic_background_white">
-                <androidx.cardview.widget.CardView
-                    android:layout_width="123dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    app:cardElevation="6dp"
-                    app:cardCornerRadius="15dp"
-                    android:layout_margin="40dp">
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp"
-                        android:gravity="center">
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="123dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    app:cardElevation="6dp"
-                    app:cardCornerRadius="15dp"
-                    android:layout_margin="40dp">
-                    <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp"
-                        android:gravity="center">
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </GridLayout>
+                android:layout_height="255dp">
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    
+                </HorizontalScrollView>
+            </LinearLayout>
             <androidx.cardview.widget.CardView
                 android:layout_width="330dp"
                 android:layout_height="230dp"
